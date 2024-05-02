@@ -13,7 +13,7 @@ import org.springframework.web.server.ResponseStatusException;
 @Component
 public class PlayerService implements PlayerRepository{
     private static HashMap<Integer, Player> team = new HashMap<>();
-    int playerId = 12;
+    int playerId = 13;
 
     public PlayerService() {
         team.put(1, new Player(1, "Alexander", 5, "All-rounder"));
@@ -27,6 +27,7 @@ public class PlayerService implements PlayerRepository{
         team.put(9, new Player(9, "John", 1, "Bowler"));
         team.put(10, new Player(10, "Earnest", 2, "All-rounder"));
         team.put(11, new Player(11, "Bob", 25, "Batsman"));
+        team.put(12,new Player(12,"suresh",23,"bowler"));
 
     }
 
